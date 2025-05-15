@@ -1,0 +1,65 @@
+/* Basic reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Full‐screen centered layout */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Stopwatch container */
+.stopwatch {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 300px;
+}
+
+/* Time display */
+#display {
+  font-size: 2rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.5rem;
+}
+
+/* Buttons */
+.controls button {
+  font-size: 1rem;
+  padding: 0.5rem 1.2rem;
+  margin: 0 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+#startStop {
+  background: #48bb78;
+  color: white;
+}
+
+#reset {
+  background: #f56565;
+  color: white;
+}
+
+/* Button hover/active effects */
+.controls button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.controls button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
